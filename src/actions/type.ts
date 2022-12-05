@@ -1,0 +1,3 @@
+export const GENERATE_NEW_GRID = "GENERATE_NEW_GRID"
+export const UPDATE_GRID = "UPDATE_GRID"
+export const CHECK_WINNER = "CHECK_WINNER"
