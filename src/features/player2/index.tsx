@@ -18,7 +18,7 @@ const Player2 = () => {
     grid.map((row: any) => {
       row &&
         row.map((phrases: any) => {
-          if (phrases.id == randNumber) {
+          if (phrases.id === randNumber) {
             dispatch(changeValue(grid, !updated, phrases.row, phrases.col));
             var index = array.indexOf(phrases.value);
             console.log(index);

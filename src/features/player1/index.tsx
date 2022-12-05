@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeValue } from "../../actions/gridActions";
 
@@ -18,7 +18,7 @@ const Player1 = () => {
     grid.map((row: any) => {
       row &&
         row.map((phrases: any) => {
-          if (phrases.id == randNumber) {
+          if (phrases.id === randNumber) {
             dispatch(changeValue(grid, !updated, phrases.row, phrases.col));
             var index = array.indexOf(phrases.value);
             console.log(index);
